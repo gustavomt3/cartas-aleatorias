@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+<p align="center">
+  <img src=".github/bobs-burguer-logo.svg" alt="Bobs Burguer Logo" />
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/gustavomt3/cartas-aleatorias">
+  <img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/gustavomt3/cartas-aleatorias/master">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/gustavomt3/cartas-aleatorias">
+</p>
+<p align="center">
+  <img alt="Deployed with FTP Deploy Action" src="https://img.shields.io/badge/Deployed With-FTP DEPLOY ACTION-%3CCOLOR%3E?style=for-the-badge&color=2b9348">
+</p>
+<br>
 
-## Available Scripts
+# Documentação
 
-In the project directory, you can run:
+## Descrição do projeto
 
-### `npm start`
+O projeto consiste em um baralho aleatório do filme Bob's Burguer. Na primeira tela você tem que por seu nome para ter acesso as cartas, na segunda tela você recebe 5 cartas aletórias e pode puxar mais 3 cartas e embaralhar as mesmas. As cartas possuem uma foto, uma descrição e pontuação aleatória.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologias
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-### `npm test`
+- [Node.js](https://nodejs.org/en/)
+- [React](https://reactjs.org)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Pré-Processadores
 
-### `npm run build`
+- [SASS](https://sass-lang.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Deploy do projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##### Link de acesso: https://bobsburguer.website/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Como executar
 
-### `npm run eject`
+#### Como rodar o projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+# Instalar as dependências
+$ npm install
+# Iniciar o projeto
+$ npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+O app estará disponível no seu browser pelo endereço http://localhost:3000.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Layout
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center">
+    <img src=".github/layout-site.jpg" alt="Layout Site" />
+</p>
