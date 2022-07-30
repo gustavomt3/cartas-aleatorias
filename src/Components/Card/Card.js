@@ -4,7 +4,12 @@ import React from 'react';
 import styles from './Card.module.scss';
 
 const Card = ({ data }) => {
-  const pontosRandom = Math.floor(Math.random() * 10);
+  const [random, setRandom] = React.useState();
+
+  React.useEffect(() => {
+    const pontosRandom = Math.floor(Math.random() * 10);
+    setRandom(pontosRandom);
+  }, []);
 
   return (
     <li className={styles.containerCard}>
@@ -20,11 +25,13 @@ const Card = ({ data }) => {
       </div>
       <div className={styles.dublador}>
         <p>Dublador</p>
-        <span>{data.voicedBy}</span>
+        <span>
+          {data.voicedBy ? data.voicedBy : 'Dublador não identificado'}
+        </span>
       </div>
       <div className={styles.pontos}>
         <p>
-          Pontos: <span>{pontosRandom}</span>{' '}
+          Pontos: <span>{random}</span>{' '}
         </p>
       </div>
     </li>

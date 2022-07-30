@@ -24,7 +24,7 @@ const Header = () => {
         {location.pathname !== '/' ? (
           <div className={styles.nameuser}>
             <p>
-              Nome do usuário: <span>{user.name ? user.name : ''}</span>
+              Nome do usuário: <span>{user !== null ? user.name : ''}</span>
             </p>
           </div>
         ) : null}

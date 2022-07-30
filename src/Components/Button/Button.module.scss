@@ -14,4 +14,7 @@ button {
   font-weight: 900;
   text-transform: uppercase;
   cursor: pointer;
+  &:disabled {
+    opacity: 0.5;
+  }
 }

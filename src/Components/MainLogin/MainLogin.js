@@ -13,12 +13,14 @@ const MainLogin = () => {
   const { user, setUser } = React.useContext(GlobalContext);
   const navigate = useNavigate();
 
+  //Pega o texto do input e seta no estado do user
   function getName(event) {
     setUser({ name: event.target.value });
   }
 
+  //Valida se o nome do usuário é valido, se for leva-o para página das cartas
   function handleSubmit() {
-    if (user.name.length >= 3) {
+    if (user !== null && user.name.length >= 3) {
       navigate('/padcards');
     } else {
       window.alert('Você precisa digitar seu nome para prosseguir');
