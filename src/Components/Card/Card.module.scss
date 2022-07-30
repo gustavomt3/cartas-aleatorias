@@ -1,0 +1,63 @@
+@import '../../GlobalStyles/vars-mixins';
+
+.containerCard {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  flex-shrink: 0;
+  background-color: $thirdColor;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  .cardPhoto {
+    margin-bottom: 20px;
+    img {
+      height: 300px;
+      width: 300px;
+      object-fit: contain;
+    }
+  }
+  .name {
+    padding: 0 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid $fifthColor;
+    h1 {
+      font-size: 1.25rem;
+      font-weight: 900;
+      padding-bottom: 10px;
+    }
+  }
+  .firsEpisode {
+    padding: 0 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid $fifthColor;
+    padding-bottom: 10px;
+    p {
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+  }
+  .dublador {
+    padding: 0 15px;
+    border-bottom: 1px solid $fifthColor;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    p {
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+  }
+  .pontos {
+    display: flex;
+    padding: 0 15px;
+    p {
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin-bottom: 5px;
+      span {
+        font-weight: 400;
+      }
+    }
+  }
+}

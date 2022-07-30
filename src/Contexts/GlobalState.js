@@ -1,3 +1,4 @@
+//React
 import React from 'react';
 
 //Create Context
@@ -7,29 +8,35 @@ export const GlobalContext = React.createContext();
 export const GlobalProvider = (props) => {
   //Login
   const [user, setUser] = React.useState({});
+  //Fetch
+  const [data, setData] = React.useState([]);
+  const [loading, setLoading] = React.useState(false);
 
   //Fetch
-  // const getData = async () => {
-  //   setLoading(true);
-  //   try {
-  //     const response = await fetch(
-  //       'https://us-central1-rapid-api-321400.cloudfunctions.net/instaviagem-challenge',
-  //     );
-  //     const data = await response.json();
-  //     const dataAlf = data.sort((a, b) => {
-  //       return a.name.localeCompare(b.name);
-  //     });
-  //     setData(dataAlf);
-  //     setDataWithFilter(dataAlf);
-  //   } catch (err) {
-  //     console.log('error', err);
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
+  const value502 = Math.floor(Math.random() * 502);
+  const getData = async () => {
+    setLoading(true);
+    try {
+      const response = await fetch(
+        `https://bobsburgers-api.herokuapp.com/characters/?limit=5&skip=${value502}`,
+      );
+      const data = await response.json();
+      setData(data);
+    } catch (err) {
+      console.log('error', err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  React.useEffect(() => {
+    getData();
+  }, []);
+
+  console.log(data);
 
   return (
-    <GlobalContext.Provider value={{ user, setUser }}>
+    <GlobalContext.Provider value={{ user, setUser, loading, data }}>
       {props.children}
     </GlobalContext.Provider>
   );

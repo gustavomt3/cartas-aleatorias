@@ -6,10 +6,11 @@ import styles from './MainLogin.module.scss';
 import { GlobalContext } from '../../Contexts/GlobalState';
 //Router
 import { useNavigate } from 'react-router-dom';
+//Components
+import Button from '../Button/Button';
 
 const MainLogin = () => {
   const { user, setUser } = React.useContext(GlobalContext);
-
   const navigate = useNavigate();
 
   function getName(event) {
@@ -28,8 +29,8 @@ const MainLogin = () => {
     <main className={styles.containerMain}>
       <h2>Digite seu nome para poder ver as cartas</h2>
       <form onSubmit={handleSubmit}>
-        <input type="text" onChange={getName} />
-        <button>Ver Cartas</button>
+        <input type="text" onChange={getName} placeholder="Nome*" />
+        <Button>Ver Cartas</Button>
       </form>
     </main>
   );
