@@ -16,7 +16,7 @@
 
 ## Descrição do projeto
 
-O projeto consiste em um baralho aleatório do filme Bob's Burguer. Na primeira tela você tem que por seu nome para ter acesso as cartas, na segunda tela você recebe 5 cartas aletórias e pode puxar mais 3 cartas e embaralhar as mesmas. As cartas possuem uma foto, uma descrição e pontuação aleatória.
+O projeto consiste em um baralho aleatório do filme Bob's Burguer. Na primeira tela você tem que por seu nome para ter acesso as cartas, na segunda tela você recebe 5 cartas aletórias e pode puxar mais 3 cartas e embaralhar as mesmas. As cartas possuem uma foto, uma descrição e pontuação aleatória..
 
 ## Tecnologias
 
