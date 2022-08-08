@@ -5,7 +5,7 @@
   width: 100%;
   min-height: calc(100vh - 75px);
   display: flex;
-  padding: 50px 30px;
+  padding: 50px 30px 70px 30px;
   justify-content: flex-start;
   align-items: center;
   background-color: $secondColor;
@@ -17,18 +17,31 @@
     margin: 0 auto;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     padding-bottom: 30px;
     @include tablet {
       flex-direction: row;
+      align-items: flex-start;
     }
   }
-  .buttons {
+}
+
+.buttons {
+  position: fixed;
+  display: flex;
+  background-color: $secondColor;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 0;
+
+  .containerButtons {
     max-width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
     @include tablet {
       flex-direction: row;
     }

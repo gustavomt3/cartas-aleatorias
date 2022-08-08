@@ -69,34 +69,38 @@ const MainCards = () => {
   }
 
   return (
-    <main className={styles.containerMain}>
-      {' '}
-      <Loading />
-      <ul className={styles.containerCards}>
-        {!loading &&
-          data &&
-          data.map((data) => {
-            return <Card key={data.id} data={data} />;
-          })}
-      </ul>
-      <div className={styles.buttons}>
-        <Button
-          onClick={() => {
-            addCard();
-          }}
-          disabled={contador >= 3 ? 'disabled' : ''}
-        >
-          {contador >= 3 ? 'Não pode puxar mais cartas' : 'Puxar nova carta'}
-        </Button>
-        <Button
-          onClick={() => {
-            shuffleArray(data);
-          }}
-        >
-          Embaralhar
-        </Button>
-      </div>
-    </main>
+    <>
+      <main className={styles.containerMain}>
+        {' '}
+        <Loading />
+        <ul className={styles.containerCards}>
+          {!loading &&
+            data &&
+            data.map((data) => {
+              return <Card key={data.id} data={data} />;
+            })}
+        </ul>
+      </main>
+      <footer className={styles.buttons}>
+        <div className={styles.containerButtons}>
+          <Button
+            onClick={() => {
+              addCard();
+            }}
+            disabled={contador >= 3 ? 'disabled' : ''}
+          >
+            {contador >= 3 ? 'Não pode puxar mais cartas' : 'Puxar nova carta'}
+          </Button>
+          <Button
+            onClick={() => {
+              shuffleArray(data);
+            }}
+          >
+            Embaralhar
+          </Button>
+        </div>
+      </footer>
+    </>
   );
 };
 
